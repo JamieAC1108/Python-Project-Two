@@ -22,6 +22,7 @@ def fetch_trivia():
         current_question = html.unescape(data['results'][0]['question'])  
         current_answer = data['results'][0]['correct_answer'].lower()
     else:
+        print(f'Trivia unable to be fetched, sorry!')
         current_question = None
         current_answer = None
 
